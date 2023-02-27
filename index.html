@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axel Rojas</title>
+    <link rel="icon" type="image/x-icon" href="./images/iniciales.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="./images/iniciales.png" alt="Logo Axel Rojas" class="logo" />
+        <nav>
+          <ul>
+            <a href="#hero">Inicio</a>
+            <a href="#sobre-mi">Sobre mi</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#contacto">Contacto</a>
+          </ul>
+        </nav>
+      </div>
+    </header>    
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div>
+              <img
+                src="images/perfil.png"
+                class="fotoPersonal"
+                alt="Foto personal"
+              />
+            </div>
+            <h1>¡Hola, soy Axel Rojas!</h1>
+          <p>
+            Bienvenidos a mi version de un Curriculum Vitae
+            para Argentina Programa
+          </p>
+          <button class="cta">
+            <a href="https://drive.google.com/file/d/19KPJcrI6ptbv2Idfzcalbfdtdva1Ydpj/view?usp=sharing" target="_bl">
+              Descargar CV
+            </a>
+          </button>
+          </div>
+        </div>
+    </div>
+    </section>
+    <section id="sobre-mi">
+      <div class="container hidden">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Sobre mi</h2>
+            <p>
+              Tengo 24 años, soy nacido y criado en Comodoro Rivadavia. Siempre
+              tuve una gran curiosidad por la informática, soy Tecnico en
+              Electronica y Diseñador Grafico autodidacta. Mi lengua nativa es
+              el español pero tambien puedo hablar ingles con fluidez.
+              Actualmente, trabajo en mi propio negocio de sublimación para
+              financiar mis estudios en programación, tanto en cursos
+              particulares como en la universidad.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <h2>Formacion Academica</h2>
+            <ul>
+              <li><strong>Técnico en electronica</strong></li>
+              <li class="escuela">CPT N°749 (Ex ENET 1)</li>
+              <li>
+                <strong>Secundario en Produccion y Servicios</strong>
+              </li>
+              <li class="escuela">CPT N°749 (Ex ENET 1)</li>
+              <li>
+                <strong>Estudiante de primer año de Lic. en Informatica</strong>
+              </li>
+              <li class="escuela">UNPJSB - Comodoro Rivadavia</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </section>
+    <section id="habilidades">
+      <div class="container hidden">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+            <h3>Habilidades</h3>
+            <p>
+              En la actualidad, me estoy capacitando en el manejo de estas
+              tecnologías. Con miras a ampliar mis competencias, actualmente
+              estoy participando en un curso de 6 meses en diseño UX y tengo
+              previsto incorporar a mi conjunto de habilidades React y Firebase
+              en los próximos meses.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div>
+                <img
+                  src="images/html.jpg"
+                  alt="Logo dehtml"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div>
+                <img src="images/css.jpg" alt="Logo de css" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div>
+                <img
+                  src="images/js.jpg"
+                  alt="Logo de JavaScript"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto">
+      <div class="container hidden">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Contacto</h2>
+            <p>
+              Si alguno de los aspectos de mi perfil llamo tu atención y
+              consideras que podríamos trabajar juntos, por favor no dudes en
+              ponerte en contacto conmigo a través de mis redes sociales, que se
+              encuentran disponibles en el pie de página.
+            </p>
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label"
+                  >Correo electrónico:</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Ingresa tu correo electrónico"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="comments" class="form-label">Comentarios:</label>
+                <textarea
+                  class="form-control"
+                  placeholder="Ingresa tus comentarios"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button class="btn btn-primary left" id="enviar">Enviar</button>
+            </form>
+          </div>
+        </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <ul>
+              <li>
+                <a href="https://github.com/AxelRojas-hub" target="_blank">
+                  <img src="./images/github.png" class="icon" alt="github">
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/axelkevinagustinrojas/" target="_blank">
+                  <img src="./images/linkedin.png" class="icon" alt="LinkedIn">
+                </a>
+              </li>
+              <li>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emaildeprueba@gmail.com" target="_blank">
+                  <img src="./images/email.png" class="icon" alt="Email">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

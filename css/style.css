@@ -1,0 +1,243 @@
+/* Gris primario:#9E9E9E
+   Light Primary: #F5F5F5
+   Dark Primary: #616161
+   Black: #212121
+   Secondary text: #757575
+   Green: #4CAF50 
+*/
+h1{font-size: 3.5em;font-weight:bold;}
+h2{font-size: 2.5em;font-weight: bold;}
+h3{font-size: 2em;font-weight: bold;}
+p{font-size: 1.1em;}
+
+.logo{
+    height: 60px;
+}
+
+.left{
+    float: left;
+}
+
+header{
+    min-height: 70px;
+    border-bottom: solid 1px #212121;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #141414;
+    color: #4caf50;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul{
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #4caf50;
+    text-transform: uppercase;
+    margin: 5px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+header nav a:hover{
+    color: #F5F5F5;
+    text-decoration: underline;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100svh;
+    color: #F5F5F5;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.cta{
+    background-color: #4caf50;
+    border-radius: 10px;
+    border: solid 1px #2c612e;
+}
+
+.cta:hover{
+    background-color: #3a7d3c;
+    border: solid 1px #4caf50;
+}
+
+.cta a{
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px;
+    color: #F5F5F5;
+    font-size: 0.9em;
+}
+
+.fotoPersonal{
+    width: 30vh;
+}
+
+#sobre-mi{
+    color: #212121;
+    min-height: 100svh;
+    padding: 150px 15px;
+    text-align: center;
+}
+
+#sobre-mi h2{
+    margin-bottom: 30px;
+}
+
+#sobre-mi p{
+    padding: 15px 20px;
+}
+
+#sobre-mi ul{
+    margin-top: 45px;
+    list-style: none;
+}
+
+#habilidades{
+    text-align: center;
+    color: #F5F5F5;
+    min-height: 100svh;
+    background-color: #141414;
+    padding: 100px 15px;
+}
+
+#habilidades p{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contacto{
+    padding: 100px 15px;
+    min-height: 95svh;
+    color: #141414;
+}
+
+.escuela{
+    margin-left: 10px;
+}
+
+.card{
+    position: inherit;
+}
+
+#enviar{
+    background-color: #4caf50;
+    border: 0px;
+}
+
+#enviar:hover{
+    background-color: #3a7d3c;
+}
+
+footer{
+    min-height: 30px;
+    margin-bottom: 0px;
+    background-color: #141414;
+}
+
+footer .container{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.icon {
+    width: 50px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+    transform: rotate(15deg);
+}
+
+.icon:not(:hover) {
+    transition-delay: 0.1s;
+    transform: rotate(0);
+}
+
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    color: #F5F5F5;
+    margin: 0 auto;
+    padding: 0;
+}
+
+footer ul li{
+    padding: 0px 15px;
+}
+
+body{
+    padding-top: 70px;
+    position: relative;
+    background-color: #F5F5F5;
+}
+.hidden{
+    opacity:0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    position: relative;
+    transition: all 1s;
+}
+.show{
+    position: relative;
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+@media(min-width:650px){
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .container{
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    header nav a{
+        font-size: 14px;
+        padding-left:15px; ;
+    }
+}
